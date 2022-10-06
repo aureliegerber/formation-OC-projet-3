@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="./public/css/normalize.css">
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="icon" href="./images/" type="image/x-icon">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Shrikhand&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/f161925d2e.js" crossorigin="anonymous"></script>
 
@@ -21,8 +22,8 @@
 </head>
 <body>
     <header>
-        <a href="#">Ohmyfood</a>
-        <div class="localisation">
+        <a href="#" class="header__logo logo">Ohmyfood</a>
+        <div class="header__location">
             <i class="fas fa-map-marker-alt"></i>
             <p>Paris, Belleville</p>
         </div>        
@@ -30,34 +31,34 @@
 
     <main>
         <section class="banner">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <button>Explorer nos restaurants</button>
+            <div class="banner__body">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
+                <button class="btn">Explorer nos restaurants</button>
+            </div>
         </section>
 
-        <section class="functioning">
+        <section class="functioning container">
             <h2>Fonctionnement</h2>
-            <div>
+            <div class="functioning__item">
                 <span>1</span>
-                <i class="fas fa-mobile-screen-button"></i>
+                <i class="fas fa-mobile-screen-button fa-grey"></i>
                 <p>Choisissez un restaurant</p>
             </div>
-            <div>
+            <div class="functioning__item">
                 <span>2</span>
-                <div>
-                    <i class="fas fa-ellipsis-vertical"></i>
-                    <i class="fas fa-solid fa-bars"></i>
-                </div>                
+                <i class="fas fa-list-ul fa-grey"></i>                              
                 <p>Composez votre menu</p>
             </div>
-            <div>
+            <div class="functioning__item functioning__item--purple">
                 <span>3</span>
-                <i class="fas fa-store"></i>
+                <i class="fas fa-store fa-purple"></i>
                 <p>Dégustez au restaurant</p>
             </div>
         </section>
 
-        <section class="restaurant">
+        <section class="restaurant container">
+            <h2>Restaurants</h2>
             <article>
                 <a href="la-palette-du-gout.html">
                     <img src="" alt="La palette du goût">
@@ -116,7 +117,7 @@
     </main>
 
     <footer>
-        <a href="#">Ohmyfood</a>
+        <a href="#" class="footer__logo logo">Ohmyfood</a>
         <ul>
             <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
             <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
