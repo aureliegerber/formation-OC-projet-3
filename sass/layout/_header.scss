@@ -4,7 +4,13 @@
 
     box-shadow: 0 2px 10px rgb(126, 123, 123);
 
-    text-align: center;    
+    text-align: center;
+
+    & i {
+        transform: translateX(-20vw);
+        
+        font-size: 1.3rem;
+    }
 }
 
 .header__location {

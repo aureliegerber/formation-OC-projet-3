@@ -1,9 +1,31 @@
 .btn {
+    position: relative;
     display: block;
     padding: 1rem 1.5rem;
     margin: auto;
-    background-image: linear-gradient(to bottom right, $secondary-color,$primary-color);
-    border-radius: 30px;
     border: none;
-    color: $primary-bg-color;   
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, $secondary-color,$primary-color);
+    box-shadow: 4px 4px 8px $shadow-color;
+    color: $primary-bg-color;
+    cursor: pointer;
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 30px;
+        box-shadow: 4px 4px 8px $shadow-color-hover;
+        opacity: 0;
+    }    
+    &:hover {        
+        opacity: 0.85;
+        transition: opacity 0.3s;
+        &::after {
+            opacity: 1;
+            transition: opacity 0.3s;            
+        }        
+    }
 }
