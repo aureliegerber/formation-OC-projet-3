@@ -4,6 +4,9 @@ body {
 
 .menu {
     & img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
         position: relative;
         z-index: -1;
     }
@@ -19,7 +22,7 @@ body {
     }
     &__title {
         display: flex;
-        gap: 18%;
+        justify-content: space-between;
         align-items: flex-start; 
     }
     & h2 {
@@ -37,19 +40,7 @@ body {
             width: 3rem;
             border-bottom: 0.2rem solid $tertiary-color;
         }
-    }
-    & h3 {
-        font-size: 1.1rem;
-        font-weight: 500;        
-    }
-    & p {
-        width: 70vw;
-        font-size: 0.9rem;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;        
-    }
-
+    }  
     &__item {
         margin-bottom: 2.5rem;
     }
@@ -58,27 +49,17 @@ body {
 .menu__card {
     position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;    
+    gap: 0.5rem;
+    align-items: flex-end;
     padding: 0.8rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
     background-color: $primary-bg-color;
     line-height: 1.5rem;
     overflow: hidden;    
-    & span {
-        font-weight: bold;
-        padding-left: 0.5rem;
-        transition: transform 1s;
-        z-index: 1;
-        overflow: hidden;
-    }
-    &:hover {
-        & .menu__check, span {
-            transform: translateX(-3.5rem);            
-            opacity: 1;
-        }       
-    }
+    & span {     
+        font-weight: bold;        
+    }   
     &:nth-child(2) {
         animation: gradual-appearance 1s;
     }
@@ -87,6 +68,35 @@ body {
     }
     &:nth-child(4) {
         animation: gradual-appearance 3s;
+    }
+    &:hover {
+        & .card__description {
+            width: 70%;
+        }
+        & .menu__check {
+            transform: translateX(-3.5rem);
+        }
+        & .menu__check i {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.card__description {    
+    width: 90%;
+    background-color: red;
+    transition: width 1s;
+    & h3 {
+        font-size: 1.1rem;
+        font-weight: 500;               
+    }
+    & p {        
+        font-size: 0.9rem;                     
+    }
+    & h3, p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 
@@ -108,13 +118,9 @@ body {
         border-radius: 50%;
         background-color: $primary-bg-color;
         color: $tertiary-color;
+        transition: transform 1s;
     }
 }
-
-.btn-command {
-    margin-top: 3rem;
-}
-
 
 @keyframes gradual-appearance {
     0% {
@@ -127,7 +133,22 @@ body {
     }
 }
 
-
+@media screen and (min-width: 620px) {
+    .menu__section {
+        max-width: 1050px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menu__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;        
+    }
+    .menu__item {
+        width: 48%;
+    }
+    
+}
 
 
 
