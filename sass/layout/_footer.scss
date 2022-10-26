@@ -15,5 +15,13 @@ footer {
         & i {
             width: 2rem;            
         }
+    }    
+}
+
+@media screen and (min-width: 620px) {
+    .footer__body {
+        max-width: 1200px;
+        padding: 2rem 1.2rem;    
+        margin: auto;
     }
 }

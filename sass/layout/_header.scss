@@ -7,8 +7,7 @@
     text-align: center;
 
     & i {
-        transform: translateX(-20vw);
-        
+        transform: translateX(-18vw);        
         font-size: 1.3rem;
     }
 }
@@ -27,4 +26,11 @@
         font-weight: 400;
         color: $primary-text-color;
     }    
+}
+
+@media screen and (max-width: 300px ) {
+    .header__logo i {
+        transform: translateX(-10vw);
+    }
+    
 }

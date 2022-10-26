@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aurélie Gerber">
+    <meta name="description" content="Avec Ohmyfood, accédez aux menus de restaurants gatsronomiques, composez votre menu et réservez afin que vos plats soient prêts à votre arrivée.">
+
+    <link rel="stylesheet" href="./public/css/normalize.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="icon" href="./images/" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&family=Shrikhand&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/f161925d2e.js" crossorigin="anonymous"></script>
+
+    <title>Ohmyfood</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="header__logo logo"><i class="fa-solid fa-arrow-left"></i>Ohmyfood</a>
+    </header>
+
+    <main class="menu">
+        <img src="./images/le-delice-des-sens-folie-mericourt-paris.jpg" 
+             srcset="./images/le-delice-des-sens-folie-mericourt-paris_3000w.jpg 3000w,
+                     ./images/le-delice-des-sens-folie-mericourt-paris_1920w.jpg 1920w,
+                     ./images/le-delice-des-sens-folie-mericourt-paris_0864w.jpg 864w"
+             sizes="100vw"          
+             alt="Restaurant Le délice des sens à Folie Méricourt - Paris">  
+        
+        <section class="menu__section">
+            <div class="menu__title">
+                <h1>Le délice des sens</h1>
+                <i class="fa-regular fa-heart heart"></i>
+            </div>
+            <div class="menu__items">
+                <section class="menu__item">
+                    <h2>Entrées</h2>
+                    <div class="menu__card card">
+                        <div class="card__description">
+                            <h3>Tartare de thon</h3>
+                            <p>Assaisonné au yuzu</p>
+                        </div>
+                        <span>25€</span>
+                        <div class="menu__check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="menu__card card">
+                        <div class="card__description">
+                            <h3>Bouchée de homard croustillant</h3>
+                            <p>Et sa farandole de petits légumes</p>
+                        </div>
+                        <span>35€</span>
+                        <div class="menu__check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="menu__card card">
+                        <div class="card__description">
+                            <h3>Velouté de cèpes</h3>
+                            <p>Aux truffes</p>
+                        </div>
+                        <span>20€</span>
+                        <div class="menu__check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </section>
+                <section class="menu__item">
+                    <h2>Plats</h2>
+                    <div class="menu__card card">
+                        <div class="card__description">
+                            <h3>Poulet rôti aux herbes de Provence</h3>
+                            <p>Et sa crème de truffe</p>
+                        </div>
+                        <span>40€</span>
+                        <div class="menu__check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="menu__card card">
+                        <div class="card__description">
+                            <h3>Langouste rôtie</h3>
+                            <p>Et ses légumes de saison</p>
+                        </div>
+                        <span>35€</span>
+                        <div class="menu__check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="menu__card card">
+                        <div class="card__description">
+                            <h3>Côte de boeuf Angus</h3>
+                            <p>Et sa purée de panais</p>
+                        </div>
+                        <span>44€</span>
+                        <div class="menu__check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </section>
+                <section class="menu__item">
+                    <h2>Desserts</h2>
+                    <div class="menu__card card">
+                        <div class="card__description">
+                            <h3>Farandole de desserts</h3>
+                            <p>Du chef</p>
+                        </div>
+                        <span>18€</span>
+                        <div class="menu__check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="menu__card card">
+                        <div class="card__description">
+                            <h3>Crème brulée</h3>
+                            <p>Revisitée</p>
+                        </div>
+                        <span>22€</span>
+                        <div class="menu__check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="menu__card card">
+                        <div class="card__description">
+                            <h3>Tiramisu</h3>
+                            <p>À la noisette</p>
+                        </div>
+                        <span>23€</span>
+                        <div class="menu__check">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <a href="#restaurant" class="btn btn__command">Commander</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__body">
+            <a href="#" class="footer__logo logo">Ohmyfood</a>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:email@exemple.com">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
