@@ -7,10 +7,10 @@
 .banner__body {
     width: 80vw;
     padding: 2rem 0 3rem;
-    margin: auto;    
+    margin: auto;
+    text-align: center;
     & p {
-        margin-bottom: 2rem;
-        text-align: center;
+        margin-bottom: 2rem;        
         opacity: 0.7;
     }    
 }

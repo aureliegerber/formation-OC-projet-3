@@ -25,20 +25,17 @@ body {
 
 h1 {
   font-size: 1.5rem;
-  text-align: center;
 }
 
 .btn {
   position: relative;
-  display: table;
+  display: inline-block;
   padding: 1rem 1.5rem;
-  margin: auto;
   border: none;
   border-radius: 30px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   box-shadow: 4px 4px 8px #D9D9D9;
   color: #FFFFFF;
-  text-align: center;
   cursor: pointer;
 }
 .btn::after {
@@ -63,6 +60,10 @@ h1 {
 .btn__command {
   width: 200px;
   margin: 3rem auto 3.5rem;
+}
+
+.btn--center {
+  text-align: center;
 }
 
 .loader__page {
@@ -214,10 +215,10 @@ footer ul i {
   width: 80vw;
   padding: 2rem 0 3rem;
   margin: auto;
+  text-align: center;
 }
 .banner__body p {
   margin-bottom: 2rem;
-  text-align: center;
   opacity: 0.7;
 }
 
