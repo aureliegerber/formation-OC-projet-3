@@ -79,42 +79,42 @@ h1 {
 }
 
 .loader {
-  animation: spin 1s forwards;
-  border: solid 2vmin transparent;
+  position: fixed;
+  left: calc(50vw - 10vmin);
+  top: calc(50vh - 10vmin);
+  width: 20vmin;
+  height: 20vmin;
   border-radius: 50%;
+  border: solid 2vmin transparent;
   border-right-color: #9356DC;
   border-top-color: #9356DC;
-  height: 20vmin;
-  left: calc(50% - 10vmin);
-  position: fixed;
-  top: calc(50% - 10vmin);
-  width: 20vmin;
+  animation: spin 1s forwards;
 }
-.loader:before {
-  animation: spin 2s forwards;
-  border: solid 2vmin transparent;
-  border-radius: 50%;
-  border-right-color: #FF79DA;
-  border-top-color: #FF79DA;
+.loader::before {
   content: "";
+  width: 16vmin;
   height: 16vmin;
   position: absolute;
   left: 0;
   top: 0;
-  width: 16vmin;
-}
-.loader:after {
-  animation: spin 3s forwards;
-  border: solid 2vmin transparent;
   border-radius: 50%;
-  border-right-color: #99E2D0;
-  border-top-color: #99E2D0;
+  border: solid 2vmin transparent;
+  border-right-color: #FF79DA;
+  border-top-color: #FF79DA;
+  animation: spin 2s forwards;
+}
+.loader::after {
   content: "";
+  width: 12vmin;
   height: 12vmin;
   position: absolute;
   left: 2vmin;
   top: 2vmin;
-  width: 12vmin;
+  border-radius: 50%;
+  border: solid 2vmin transparent;
+  border-right-color: #99E2D0;
+  border-top-color: #99E2D0;
+  animation: spin 3s forwards;
 }
 
 @keyframes loader-page {
@@ -181,14 +181,8 @@ h1 {
 }
 
 footer {
-  padding: 1.5rem 1.5rem 2rem;
   background-color: #353535;
   color: #FFFFFF;
-}
-footer .footer__logo {
-  display: inline-block;
-  margin-bottom: 1.2rem;
-  font-size: 1.2rem;
 }
 footer ul {
   list-style-type: none;
@@ -199,10 +193,18 @@ footer ul i {
   width: 2rem;
 }
 
+.footer__body {
+  padding: 1.5rem 1.5rem 2rem;
+}
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
 @media screen and (min-width: 620px) {
   .footer__body {
     max-width: 1200px;
-    padding: 2rem 1.2rem;
     margin: auto;
   }
 }
