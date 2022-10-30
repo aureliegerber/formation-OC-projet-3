@@ -2,26 +2,27 @@ footer {
     padding: 1.5rem 1.5rem 2rem;
     background-color: $quaternary-bg-color;    
     color: $primary-bg-color;
+
     & .footer__logo {
         display: inline-block;
         margin-bottom: 1.2rem;
         font-size: 1.2rem;
     }
+    
     & ul {
         list-style-type: none;
         line-height: 1.8rem;
         font-weight: 500;
-        
         & i {
-            width: 2rem;            
+            width: 2rem;       
         }
-    }    
+    }
 }
 
 @media screen and (min-width: 620px) {
     .footer__body {
         max-width: 1200px;
-        padding: 2rem 1.2rem;    
+        padding: 2rem 1.2rem;   
         margin: auto;
     }
 }

@@ -10,23 +10,24 @@
     opacity: 0.9;
 }
 
-.loader {    
+.loader {
     animation: spin 1s forwards;
     border: solid 2vmin transparent;
     border-radius: 50%;
     border-right-color: $primary-color;
-    border-top-color: $primary-color;    
+    border-top-color: $primary-color; 
     height: 20vmin;
     left: calc(50% - 10vmin);
     position: fixed;
     top: calc(50% - 10vmin);
-    width: 20vmin;    
+    width: 20vmin;
+
     &:before {
       animation: spin 2s forwards;
       border: solid 2vmin transparent;
       border-radius: 50%;
       border-right-color: $secondary-color;
-      border-top-color: $secondary-color;      
+      border-top-color: $secondary-color;     
       content: "";
       height: 16vmin;
       position: absolute;
@@ -34,12 +35,13 @@
       top: 0;
       width: 16vmin;
     }
+    
     &:after {
       animation: spin 3s forwards;
       border: solid 2vmin transparent;
       border-radius: 50%;
       border-right-color: $tertiary-color;
-      border-top-color: $tertiary-color;      
+      border-top-color: $tertiary-color;     
       content: "";
       height: 12vmin;
       position: absolute;
@@ -54,8 +56,8 @@
         visibility: visible;
     }
     100% {
-        visibility: hidden;    
-    }    
+        visibility: hidden;  
+    }
   }
   
   @keyframes spin {
@@ -65,5 +67,5 @@
     100% {
         visibility: hidden;
         transform: rotate(360deg);
-    }    
+    }  
   }
