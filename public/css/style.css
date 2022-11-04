@@ -59,11 +59,12 @@ h1 {
 }
 .btn__command {
   width: 200px;
-  margin: 3rem auto 3.5rem;
+  margin: 1rem auto 3.5rem;
 }
 
 .btn--center {
   text-align: center;
+  margin: auto;
 }
 
 .loader__page {
