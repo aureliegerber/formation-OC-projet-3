@@ -128,39 +128,6 @@
     line-height: 1.5rem;
 }
 
-/* Heart animation */
-
-.heart {
-    position: relative;
-    margin-right: 1.5rem;
-    border: none;
-    background-color: transparent;
-    font-size: 1.5rem;
-
-    &::after {
-        content: "\f004";
-        background: linear-gradient($primary-color, $secondary-color); /* Set the background color */
-        background-clip: text; /* Mask the background around the text */
-        color: transparent;   /* Make the text fill color value transparent so the masked background color comes through */
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;     
-        transform: scale(0);
-        transition: 0.6s;
-    }
-
-    &:hover {
-        &::after {
-            transform: scale(1.05);
-            transition: transform 0.6s;
-        }
-    }
-}
-
 /* Media Queries */
 
 @media screen and (min-width: 620px ) {
