@@ -9,7 +9,7 @@ Finished project
 * Ensure the graphic coherence of a web site
 * Set up a front-end environment
 * Set up a navigation structure for a website
-* Use a verion management system for the follow-up of the project and its hosting
+* Use a version management system for the follow-up of the project and its hosting
 * Make technical choices to improve the performance of a website
 
 ## Technologies
