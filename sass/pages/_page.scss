@@ -1,6 +1,10 @@
+/* Body */
+
 body {
     position: relative;
 }
+
+/* Menu */
 
 .menu {
     & img {
@@ -50,6 +54,8 @@ body {
         margin-bottom: 2.5rem;
     }
 }
+
+/* Menu Card */
 
 .menu__card {
     position: relative;
@@ -112,6 +118,8 @@ body {
     }
 }
 
+/* Menu animation */
+
 .menu__check {
     position: absolute;
     top: 0;
@@ -144,6 +152,8 @@ body {
         opacity: 1;
     }
 }
+
+/* Media Queries */
 
 @media screen and (min-width: 712px) {
     .menu__section {

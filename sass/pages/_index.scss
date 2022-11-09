@@ -82,6 +82,7 @@
 }
 
 /* Restaurant */
+
 .max-container {
     background-color: $secondary-bg-color;
 }
@@ -98,6 +99,8 @@
         font-weight: 300;
     }    
 }
+
+/* Restaurant Card*/
 
 .restaurant__card {
     position: relative;
@@ -124,6 +127,8 @@
     padding: 1rem;
     line-height: 1.5rem;
 }
+
+/* Heart animation */
 
 .heart {
     position: relative;
@@ -155,6 +160,8 @@
         }
     }
 }
+
+/* Media Queries */
 
 @media screen and (min-width: 620px ) {
     .restaurants__cards {   
