@@ -301,6 +301,7 @@ footer ul i {
   font-weight: 300;
 }
 
+/* Restaurant Card*/
 .restaurant__card {
   position: relative;
 }
@@ -327,6 +328,7 @@ footer ul i {
   line-height: 1.5rem;
 }
 
+/* Heart animation */
 .heart {
   position: relative;
   margin-right: 1.5rem;
@@ -354,6 +356,7 @@ footer ul i {
   transition: transform 0.6s;
 }
 
+/* Media Queries */
 @media screen and (min-width: 620px) {
   .restaurants__cards {
     margin: auto;
@@ -365,10 +368,12 @@ footer ul i {
     width: 48%;
   }
 }
+/* Body */
 body {
   position: relative;
 }
 
+/* Menu */
 .menu img {
   width: 100%;
   max-height: 400px;
@@ -412,6 +417,7 @@ body {
   margin-bottom: 2.5rem;
 }
 
+/* Menu Card */
 .menu__card {
   position: relative;
   display: flex;
@@ -463,6 +469,7 @@ body {
   text-overflow: ellipsis;
 }
 
+/* Menu animation */
 .menu__check {
   position: absolute;
   top: 0;
@@ -494,6 +501,7 @@ body {
     opacity: 1;
   }
 }
+/* Media Queries */
 @media screen and (min-width: 712px) {
   .menu__section {
     max-width: 1200px;
